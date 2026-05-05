@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" style="background-color: #444">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1, user-scalable=no, interactive-widget=overlays-content, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="color-scheme" content="dark" />
+
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+
+    <!-- <link rel="icon" type="image/svg+xml" href="./favicon.png" /> -->
+  </head>
+
+  <body>
+    <p id="loading">Loading...</p>
+    <div id="app" class="hidden">
+
+      <p>
+        Playing users:
+        <ul id="player-list">
+        
+        </ul>
+      </p>
+      <button type="button" id="server-assign-users">Assign playing-user objects</button>
+
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

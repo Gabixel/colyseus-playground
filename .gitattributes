@@ -1,0 +1,5 @@
+# https://git-scm.com/docs/gitattributes
+# TODO: set to `* text eol=lf`?
+
+# Auto detect text files and perform LF normalization
+* text=auto

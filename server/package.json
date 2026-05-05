@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "test-server",
+  "version": "1.0",
+  "author": "Gabixel",
+  "type": "commonjs",
+  "license": "MIT",
+  "description": "",
+  "main": "build/index.js",
+  "engines": {
+    "node": ">= 16.13.0"
+  },
+  "scripts": {
+    "start": "tsx watch src/index.ts",
+    "nowatch": "tsx src/index.ts",
+    "loadtest": "tsx loadtest/example.ts --room my_room --numClients 2",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf build",
+    "test": "mocha -r tsx test/**_test.ts --exit --timeout 15000"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+		"@types/mocha": "^10.0.10",
+		"mocha": "^11.7.5",
+		"rimraf": "^6.1.2",
+		"tsx": "^4.21.0",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@colyseus/core": "^0.17.43",
+    "@colyseus/schema": "^4.0.22",
+		"@colyseus/loadtest": "^0.17.8",
+		"@colyseus/monitor": "^0.17.8",
+		"@colyseus/playground": "^0.17.12",
+		"@colyseus/testing": "^0.17.11",
+		"@colyseus/tools": "^0.17.19",
+    "colyseus": "^0.17.8",
+    "compression": "^1.8.1",
+    "express": "^5.1.0"
+  }
+}
